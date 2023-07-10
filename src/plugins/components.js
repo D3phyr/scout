@@ -1,0 +1,27 @@
+import Vue from 'vue'
+
+Vue.component('v-btn', () => import('../components/@ui/button/index.vue'))
+Vue.component('v-match-info', () => import('../components/@ui/matchInfo/index.vue'))
+Vue.component('v-icon', () => import('../components/@ui/icon/index.vue'))
+Vue.component('v-image', () => import('../components/@ui/image/index.vue'))
+Vue.component('v-infoTable', () => import('../components/id/infoTable/index.vue'))
+Vue.component('v-gameTable', () => import('../components/@ui/gameTable/index.vue'))
+
+Vue.component('v-popupPlayer', () => import('../components/@ui/popup/popupPlayer/index.vue'))
+Vue.component('v-popupDelete', () => import('../components/@ui/popup/popupDelete/index.vue'))
+Vue.component('v-popupEndGame', () => import('../components/@ui/popup/popupEndGame/index.vue'))
+Vue.component('v-popupConfirm', () => import('../components/@ui/popup/popupConfirm/index.vue'))
+Vue.component('v-popupTimeout', () => import('../components/@ui/popup/popupTimeout/index.vue'))
+Vue.component('v-popupScoreChange', () => import('../components/@ui/popup/popupScoreChange/index.vue'))
+Vue.component('v-popupTimeChange', () => import('../components/@ui/popup/popupTimeChange/index.vue'))
+Vue.component('v-popupBasketPenalty', () => import('../components/@ui/popup/popupBasketPenalty/index.vue'))
+Vue.component('v-popupInfoChange', () => import('../components/@ui/popup/popupInfoChange/index.vue'))
+Vue.component('v-popupMatchLinkChange', () => import('../components/@ui/popup/popupMatchLinkChange/index.vue'))
+Vue.component('v-popupDisconnectOperator', () => import('../components/@ui/popup/popupDisconnectOperator/index.vue'))
+Vue.component('v-popupWidget', () => import('../components/@ui/popup/popupWidget/index.vue'))
+
+Vue.component('v-background', () => import('../components/@ui/background/index.vue'))
+Vue.component('v-control-panel', () => import('../components/id/controlPanel/index.vue'))
+Vue.component('v-score-panel', () => import('../components/id/scorePanel/index.vue'))
+Vue.component('v-matchAll', () => import('../components/id/matchAll/index.vue'))
+Vue.component('v-matchHeader', () => import('../components/@ui/matchHeader/index.vue'))

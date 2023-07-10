@@ -1,0 +1,86 @@
+.wrapper {
+    width: 100%;
+    .upperPanel {
+      display: flex;
+      justify-content: space-between;
+      .pannelItemContainer {
+        margin-top: auto;
+      }
+    }
+    input {
+      background: var(--inputBackColor);
+      width: 25.5rem;
+      border-radius: var(--border-radius);
+      outline: none;
+      border: 0;
+      height: 5rem;
+      padding: 0 1.5rem;
+      margin: 1rem 0 2rem;
+      color: var(--white);
+      font-weight: 400;
+      @include text-small;
+    }
+      .title {
+      @include teamName;
+      color: var(--red);
+      margin-top: 11rem;
+      margin-bottom: 2rem;
+      font-weight: bold;
+      .white  {
+        color: var(--white);
+      }
+    }
+    .createGameButton {
+      // width: 25.4rem;
+      // height: 9.0rem;
+      // max-width: 25.4rem;
+      width: fit-content;
+      padding: 3.7rem 2rem;
+      background: var(--buttonBackColor);
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 3.1rem;
+      transform: translate3d(0);
+      transition: transform 0.15s ease-out;
+      cursor: pointer;
+      .buttonText {
+        font-weight: 700;
+        color: var(--white);
+        @include button;
+      }
+      .image {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    .createGameButton:hover {
+      transform: scale(1.05);
+    }
+    .createGameButton:active {
+      transform: scale(0.95);
+    }
+    .tableOptions {
+      display: flex;
+      .title {
+        @include teamName;
+        font-weight: bold;
+        cursor: pointer;
+        color: var(--white);
+      }
+      .current  {
+        color: var(--red);
+      }
+      .title + .title {
+        margin-left: 5rem;
+      }
+      .title:hover {
+        color: var(--red);
+      }
+    }
+  }
+  .invert {
+      filter: invert(1);
+  }

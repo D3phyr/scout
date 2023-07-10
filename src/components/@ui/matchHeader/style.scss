@@ -1,0 +1,89 @@
+.headerContainer {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    header {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 3rem 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            height: 2.4rem;
+            display: flex;
+            align-items: center;
+            img {
+                height: 100%;
+            }
+            .changeTheme {
+                width: 3rem;
+                height: 3rem;
+                margin-left: 1.519rem;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
+        .headerElements {
+            display: flex;
+            .userName {
+                margin: 0 3rem 0 0;
+                font-weight: 700;
+                color: var(--white);
+                @include text-small;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+            .iconProfile {
+                margin: 0 .5rem 0 0;
+                width: 3rem;
+                height: 3rem;
+            }
+            .iconBack {
+                margin: 0 3rem 0 8rem;
+                width: 3rem;
+                height: 3rem;
+            }
+            .buttonDisabled {
+                cursor: initial;
+                opacity: 0.3;
+                pointer-events: none;
+            }
+            .protocolImage {
+                width: 3rem;
+                height: 3rem;
+                margin: 0 3rem 0 0;
+            }
+        }
+    }
+    .disabled {
+        opacity: 0;
+    }
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.swapBatters {
+    transition: transform 0.8s;
+}
+.swapBattersRotate {
+    transform: rotate(360deg);
+}
+
+.mouseScale {
+    transform: translate3d(0);
+    transition: transform 0.15s ease-out;
+    -webkit-overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+.mouseScale:hover {
+    transform: scale(1.05);
+}
+.mouseScale:active {
+    transform: scale(0.95);
+}

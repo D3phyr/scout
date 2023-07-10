@@ -1,0 +1,386 @@
+[
+    {
+        "eventId": 1,
+        "eventName": "Гол",
+        "eventColor": "green",
+        "deletable": true,
+        "editable": true,
+        "record": true,
+        "method": "paramIncrease",
+        "methodParam": "score",
+        "methodValue": 1
+    },
+    {
+        "eventId": 2,
+        "eventName": "Удаление",
+        "eventColor": "red",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 3,
+        "eventName": "Владение",
+        "eventColor": "",
+        "deletable": false,
+        "editable": true,
+        "record": false,
+        "method": "changeHoldTime"
+    },
+    {
+        "eventId": 4,
+        "eventName": "Замена",
+        "eventColor": "yellow",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 5,
+        "eventName": "Удар в створ",
+        "eventColor": "greenLight",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 6,
+        "eventName": "Промах",
+        "eventColor": "yellow",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 7,
+        "eventName": "Фол",
+        "eventColor": "red",
+        "deletable": true,
+        "editable": true,
+        "record": true,
+        "method": "paramIncrease",
+        "methodParam": "foul",
+        "methodValue": 1
+    },
+    {
+        "eventId": 8,
+        "eventName": "Пауза",
+        "eventColor": "yellow",
+        "deletable": false,
+        "editable": false,
+        "record": true,
+        "method": "timerChange",
+        "methodValue": "stop"
+    },
+    {
+        "eventId": 9,
+        "eventName": "Возобновление игры",
+        "eventColor": "yellow",
+        "deletable": false,
+        "editable": false,
+        "record": true,
+        "method": "timerChange",
+        "methodValue": "continue"
+    },
+    {
+        "eventId": 10,
+        "eventName": "Начало серии буллитов",
+        "eventColor": "yellow",
+        "deletable": true,
+        "editable": false,
+        "record": true,
+        "method": "changeStage"
+    },
+    {
+        "eventId": 11,
+        "eventName": "Конец серии буллитов",
+        "eventColor": "yellow"
+    },
+    {
+        "eventId": 12,
+        "eventName": "Победа",
+        "eventColor": ""
+    },
+    {
+        "eventId": 13,
+        "eventName": "Удар по воротам",
+        "eventColor": "greenLight",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 14,
+        "eventName": "Аут",
+        "eventColor": "red",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 15,
+        "eventName": "Желтая карточка",
+        "eventColor": "yellow",
+        "deletable": true,
+        "editable": true,
+        "record": true,
+        "method": "paramIncrease",
+        "methodParam": "yellowCard",
+        "methodValue": 1
+    },
+    {
+        "eventId": 16,
+        "eventName": "Красная карточка",
+        "eventColor": "red",
+        "deletable": true,
+        "editable": true,
+        "record": true,
+        "method": "paramIncrease",
+        "methodParam": "redCard",
+        "methodValue": 1
+    },
+    {
+        "eventId": 17,
+        "eventName": "Оффсайд",
+        "eventColor": "yellow",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 18,
+        "eventName": "Угловой",
+        "eventColor": "yellow",
+        "deletable": true,
+        "editable": true,
+        "record": true,
+        "method": "paramIncrease",
+        "methodParam": "cornerKick",
+        "methodValue": 1
+    },
+    {
+        "eventId": 19,
+        "eventName": "Штрафной",
+        "eventColor": "red",
+        "deletable": true,
+        "editable": false,
+        "record": true,
+        "method": "changeDelay"
+    },
+    {
+        "eventId": 20,
+        "eventName": "Начало серии пенальти",
+        "eventColor": "yellow",
+        "deletable": true,
+        "editable": false,
+        "record": true,
+        "method": "changeStage"
+    },
+    {
+        "eventId": 21,
+        "eventName": "Конец серии пенальти",
+        "eventColor": "yellow",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 22,
+        "eventName": "Трехочковый бросок",
+        "eventColor": "green",
+        "deletable": true,
+        "editable": true,
+        "record": true,
+        "method": "paramIncrease",
+        "methodParam": "score",
+        "methodValue": 3
+    },
+    {
+        "eventId": 23,
+        "eventName": "Двухочковый бросок",
+        "eventColor": "green",
+        "deletable": true,
+        "editable": true,
+        "record": true,
+        "method": "paramIncrease",
+        "methodParam": "score",
+        "methodValue": 2
+    },
+    {
+        "eventId": 24,
+        "eventName": "Одноочковый бросок",
+        "eventColor": "green",
+        "deletable": true,
+        "editable": true,
+        "record": true,
+        "method": "paramIncrease",
+        "methodParam": "score",
+        "methodValue": 1
+    },
+    {
+        "eventId": 25,
+        "eventName": "Перехват",
+        "eventColor": "greenLight",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 26,
+        "eventName": "Потеря",
+        "eventColor": "greenLight",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 27,
+        "eventName": "Подбор в атаке",
+        "eventColor": "greenLight",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 28,
+        "eventName": "Подбор в защите",
+        "eventColor": "greenLight",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 29,
+        "eventName": "Подача",
+        "eventColor": "greenLight",
+        "deletable": true,
+        "editable": true,
+        "record": true,
+        "method": "changeDelay"
+    },
+    {
+        "eventId": 30,
+        "eventName": "Очко",
+        "eventColor": "green",
+        "deletable": true,
+        "editable": true,
+        "record": true,
+        "method": "paramIncrease",
+        "methodParam": "score",
+        "methodValue": 1
+    },
+    {
+        "eventId": 31,
+        "eventName": "Ошибка",
+        "eventColor": "red",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 32,
+        "eventName": "Эйс",
+        "eventColor": "green",
+        "deletable": true,
+        "editable": true,
+        "record": true,
+        "method": "paramIncrease",
+        "methodParam": "score",
+        "methodValue": 1
+    },
+    {
+        "eventId": 33,
+        "eventName": "Обмен полями",
+        "eventColor": "yellow"
+    },
+    {
+        "eventId": 34,
+        "eventName": "Пенальти",
+        "eventColor": "greenLight",
+        "deletable": true,
+        "editable": true,
+        "record": true
+    },
+    {
+        "eventId": 35,
+        "eventName": "Смена периода",
+        "eventColor": "greenLight",
+        "deletable": true,
+        "editable": false,
+        "record": true,
+        "method": "changePeriod"
+    },
+    {
+        "eventId": 36,
+        "eventName": "Смена сета",
+        "eventColor": "greenLight"
+    },
+    {
+        "eventId": 37,
+        "eventName": "Изменение счета",
+        "eventColor": "yellow",
+        "deletable": true,
+        "editable": false,
+        "record": true
+    },
+    {
+        "eventId": 38,
+        "eventName": "Изменение времени",
+        "eventColor": "yellow",
+        "deletable": false,
+        "editable": false,
+        "record": true
+    },
+    {
+        "eventId": 39,
+        "eventName": "Редактирование ссылки",
+        "eventColor": "yellow"
+    },
+    {
+        "eventId": 40,
+        "eventName": "Таймаут",
+        "eventColor": "yellow",
+        "deletable": false,
+        "editable": true,
+        "record": true,
+        "method": "timerChange",
+        "methodValue": "stop"
+    },
+    {
+        "eventId": 41,
+        "eventName": "Редактирование матча",
+        "eventColor": "yellow",
+        "deletable": true,
+        "editable": false,
+        "record": true
+    },
+    {
+        "eventId": 42,
+        "eventName": "Окончание штрафных",
+        "eventColor": "yellow",
+        "deletable": true,
+        "editable": false,
+        "record": true,
+        "method": "resetDelay"
+    },
+    {
+        "eventId": 43,
+        "eventName": "Начало матча",
+        "eventColor": "green",
+        "deletable": false,
+        "editable": false,
+        "record": true,
+        "method": "timerChange",
+        "methodValue": "start"
+    },
+    {
+        "eventId": 44,
+        "eventName": "Конец матча",
+        "eventColor": "green",
+        "deletable": false,
+        "editable": false,
+        "record": true,
+        "method": "timerChange",
+        "methodValue": "end"
+    }
+]

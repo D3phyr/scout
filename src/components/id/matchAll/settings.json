@@ -1,0 +1,211 @@
+{
+    "4": {
+        "3": {
+            "name": "3 Сета",
+            "settings": {
+                "period_1": {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_2": {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_3": {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                }
+            }
+        },
+        "5": {
+            "name": "5 Сетов",
+            "settings": {
+                "period_1": {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_2" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_3" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_4" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_5" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                }
+            }
+        },
+        "3D": {
+            "name": "3 Сета пары",
+            "settings" : {
+                "period_1" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_2" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_3" : {
+                    "type": "short",
+                    "win_condition": 10,
+                    "score_difference": 2
+                }
+            }
+        },
+        "5D": {
+            "name": "5 Сетов пары",
+            "settings" : {
+                "period_1" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_2" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_3" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_4" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_5" : {
+                    "type": "short",
+                    "win_condition": 10,
+                    "score_difference": 2
+                }
+            }
+        },
+        "3B": {
+            "name": "3 Сета большой шлем",
+            "settings" : {
+                "period_1" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_2" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_3" : {
+                    "type": "long",
+                    "win_condition": 6,
+                    "score_difference": 2
+                }
+            }
+        },
+        "5B": {
+            "name": "5 Сетов большой шлем",
+            "settings" : {
+                "period_1" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_2" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_3" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_4" : {
+                    "set_13": {
+                        "type": "tie-break",
+                        "win_condition": 7,
+                        "score_difference": 2
+                    }
+                },
+                "period_5" : {
+                    "type": "long",
+                    "win_condition": 6,
+                    "score_difference": 2
+                }
+            }
+        },
+        "3S": {
+            "name": "Шорт",
+            "settings" : {
+                "period_1" : {
+                    "type": "super-tie-break",
+                    "win_condition": 10
+                },
+                "period_2" : {
+                    "type": "super-tie-break",
+                    "win_condition": 10
+                },
+                "period_3" : {
+                    "type": "super-tie-break",
+                    "win_condition": 10
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.wrapper {
+    max-width: 108rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+    .title {
+      @include title;
+      color: var(--red);
+      margin-top: 9.9rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      position: relative;
+      .white  {
+        color: var(--white);
+      }
+    }
+    .controls {
+      display: flex;
+      justify-content: center;
+      .score {
+        flex: 1
+      }
+    }
+    .subtitle {
+      @include teamName;
+      margin-top: 6.6rem;
+      color: var(--white);
+    }
+  }
+  .matchVideoContainer {
+    width: 66.9rem;
+    height: 37.8rem;
+    background: black;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
+    border-radius: 10px;
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .blackScore {
+    // background: black;
+    height: 100%;
+    width: 28rem !important;
+    height: 24rem !important;
+  }
+  .proxyHeaderContainer {
+      width: 100%;
+      z-index: 12;
+      position: absolute;
+      top: 0rem;
+      left: 0;
+      // padding: 0 3rem;
+  }
+  .backButton {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: -15rem;
+  }
+  .invert {
+      filter: invert(1);
+  }
+  
+  .green {
+    background: linear-gradient(180deg, rgba(103, 255, 100, 0.7) 0%, transparent 36.02%);
+  }
+  .yellow {
+    background: linear-gradient(180deg, rgba(255, 246, 22, 0.7) 0%, transparent 36.02%);
+  }
+  .red {
+    background: linear-gradient(180deg, rgba(255, 38, 38, 0.7) 0%, transparent 36.02%);
+  }
+  
+  .disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+  }
+  
+  .colorBackground {
+      position: fixed;
+      z-index: -100;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      animation: blink 20s;
+      animation-iteration-count: infinite;
+  }
+  
+  .replaced {
+      flex-direction: row-reverse
+    }
+
+    .spectatorWrapper {
+      max-width: 108rem;
+      // margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-weight: 700;
+    }
+
+    .spectatorView {
+      align-items: center;
+    }
+  
+  @keyframes blink {
+      0% {
+          opacity: 0;
+      }
+      50% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0;
+      }
+  }

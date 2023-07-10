@@ -1,0 +1,64 @@
+:root {
+  --background: linear-gradient(180deg, #242424 0%, #121212 100%);
+  --white: #FFFFFF;
+  --black: #000000;
+  --red: #FF2626;
+  --border-radius: 1.5rem;
+  --green: #0FA75E;
+  --greenLight: #64FF99;
+  --yellow: #FFF616;
+  --purple: #B174FF;
+  --grey: rgba(255, 255, 255, 0.1);
+  --buttonBackColor: rgba(0, 0, 0, 0.5);
+  --matchInfoUnderlineColor: rgba(255, 255, 255, 0.2);
+  --inputBackColor: rgba(255, 255, 255, 0.05);
+  --inputHoverColor: rgba(255, 255, 255, 0.15);
+}
+
+@mixin score {
+  font-size: 7.2rem;
+  line-height: 8.3rem;
+}
+
+@mixin title {
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+}
+
+@mixin teamName {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+@mixin text-medium {
+  font-size: 2.4rem;
+  line-height: 1.6rem;
+}
+
+@mixin text-game-name {
+  font-size: 2.1rem;
+  line-height: 2.4rem;
+}
+
+@mixin button {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+@mixin text-small {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+@mixin container {
+  width: 100%;
+  padding: 0 3rem;
+}
+
+@mixin containerMobile {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+// $tabletWidth: 900px;
+// $mobileWidth: 649px;

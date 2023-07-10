@@ -1,0 +1,240 @@
+.container {
+    border-radius: var(--border-radius);
+    width: 34rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    .time {
+        font-weight: 700;
+        @include text-medium;
+        cursor: pointer;
+    }
+    .score {
+        font-weight: 700;
+        @include score;
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+    .periodScore {
+        font-weight: 700;
+        @include title;
+        cursor: pointer;
+        text-align: center;
+    }
+    .periodCount {
+        margin: 2rem 0 0;
+        display: flex;
+        gap: 4rem;
+        .periodCountNumber {
+            font-weight: 700;
+            @include text-medium;
+            opacity: 0.2;
+        }
+        .active {
+            opacity: 1;
+        }
+    }
+    .periodCountBullitt {
+        margin: 3rem 0 0;
+        display: flex;
+        gap: 4rem;
+        .periodCountNumber {
+            font-weight: 700;
+            @include text-medium;
+            opacity: 0.2;
+        }
+        .active {
+            opacity: 1;
+        }
+    }
+    .periodName {
+        margin-top: 1rem;
+        font-weight: 700;
+        @include button;
+    }
+    .periodNameRef {
+        margin-top: 1rem;
+        font-weight: 700;
+        @include button;
+        text-align: center;
+    }
+    .controls {
+        display: flex;
+        gap: 4rem;
+        margin-top: 3rem;
+        .controlButton {
+            transition: transform .3s;
+            width: 10rem;
+            height: 10rem;
+        }
+        .controlButton:hover {
+            transform: scale(1.05);
+        }
+    }
+    .disabled {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+    .ballPossession {
+        height: 1.1rem;
+        width: 80%;
+        background-color: var(--black);
+        margin-top: 4.1rem;
+        margin-bottom: .9rem;
+        display: flex;
+        overflow: hidden;
+        .ballPossessionLeftContainer {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            .leftProgress {
+                height: 100%;
+                background-color: var(--greenLight);
+                transition: width .5s;
+            }
+        }
+        .ballPossessionRightContainer {
+            height: 100%;
+            width: 50%;
+            .rightProgress {
+                height: 100%;
+                background-color: var(--yellow);
+                transition: width .5s;
+            }
+        }
+    }
+    .ballPossessionCount {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        .possessionCount {
+            font-weight: 700;
+            color: var(--white);
+            @include button;
+        }
+    }
+    .green {
+        background: linear-gradient(180deg, rgba(103, 255, 100, 0.7) 0%, transparent 36.02%);
+    }
+    .yellow {
+        background: linear-gradient(180deg, rgba(255, 246, 22, 0.7) 0%, transparent 36.02%);
+    }
+    .red {
+        background: linear-gradient(180deg, rgba(255, 38, 38, 0.7) 0%, transparent 36.02%);
+    }
+}
+
+.overCount {
+    margin-top: 2.3rem;
+    span {
+        margin-left: 1.6rem;
+    }
+}
+
+.colorBackground {
+    position: fixed;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: blink 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.pointsContainer {
+    margin: 2.6rem 0 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .point {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: 2px solid var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        .pointContent {
+            font-weight: 700;
+            color: var(--white);
+            @include button;
+            text-align: center;
+        }
+    }
+    .out {
+        border-color: var(--red);
+        div {
+            background-color: var(--red);
+            border-radius: 50%;
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+    }
+    .current {
+        background-color: var(--white);
+    }
+}
+.buttonsContainer {
+    display: flex;
+    width: 36.957rem;
+    // height: 6.945rem;
+    button {
+        height: 100%;
+    }
+    button + button {
+        margin-left: .558rem;
+    }
+}
+.buttonsContainer + .buttonsContainer{
+    margin-top: .558rem;
+}
+.outContainer {
+    display: flex;
+    margin-top: 4.053rem;
+    width: 30.4rem;
+    height: 5.0rem;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+.row + .row {
+    margin-top: 0.558rem;
+}
+.colomn {
+    display: flex;
+    flex-direction: column;
+}
+.dragContaner {
+    display: flex;
+    width: 100%;
+    button + button {
+        margin-left: 0.558rem;
+    }
+    button {
+        height: 6.945rem;
+    }
+}
+.invert {
+    filter: invert(1);
+}
+   .grab {
+        cursor: grab;
+    }

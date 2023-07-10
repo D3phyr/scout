@@ -1,0 +1,59 @@
+@import './_normalize.scss';
+@import './_variables.scss';
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, #app {
+  height: 100%;
+}
+
+html {
+  font-size:  0.6944444444vw;
+  background: var(--background);
+  &:global(.bg-light) {
+    background: transparent;
+    padding: 0;
+  }
+}
+
+body {
+  font-size: 2.4rem;
+  line-height: 1.1666666667;
+  font-family: 'Helvetica', sans-serif;
+  height: 100%;
+  width: 100%;
+  padding: 0 3rem;
+
+  &:global(.popup-opened) {
+    overflow: hidden;
+  }
+  &:global(.bg-light) {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+:global(.v-toast__text) {
+  font-size: 1.4rem;
+}
+
+:global(.sortable-chosen) {
+  filter: drop-shadow(0px 0px 30px #FF2626);
+}
+
+:global(.verte__guide) {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+:global(.verte__controller) {
+  display: none;
+}
+
+:global(.verte__draggable) {
+  display: none;
+}
